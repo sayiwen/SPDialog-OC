@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'SPDialog_Example' do
+  pod 'SPDialog', :path => '../'
+
+  target 'SPDialog_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
