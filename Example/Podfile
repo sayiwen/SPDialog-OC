@@ -4,7 +4,8 @@ platform :ios, '10.0'
 
 target 'SPDialog_Example' do
   pod 'SPDialog', :path => '../'
-
+  pod 'SPTheme', :path => '../../SPTheme'
+  pod 'SPLayout', :path => '../../SPLayout'
   target 'SPDialog_Tests' do
     inherit! :search_paths
 

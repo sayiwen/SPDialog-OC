@@ -61,11 +61,11 @@
 		79C729EA6DD3DBAB8E0F116C /* Pods_SPDialog_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPDialog_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8463EEDF2EDB2FC0C3CBC433 /* Pods-SPDialog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPDialog_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SPDialog_Tests/Pods-SPDialog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		91C87FD0579AB441AB4BD96F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		91C87FD0579AB441AB4BD96F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A23B3594CBA551271023392A /* Pods-SPDialog_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPDialog_Tests.release.xcconfig"; path = "Target Support Files/Pods-SPDialog_Tests/Pods-SPDialog_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C79D21BFEBF30D00A993697E /* Pods-SPDialog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPDialog_Example.debug.xcconfig"; path = "Target Support Files/Pods-SPDialog_Example/Pods-SPDialog_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E2C4AF182C00FE855B4DD648 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F8889EC03D886229D79019E5 /* SPDialog.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SPDialog.podspec; path = ../SPDialog.podspec; sourceTree = "<group>"; };
+		E2C4AF182C00FE855B4DD648 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F8889EC03D886229D79019E5 /* SPDialog.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SPDialog.podspec; path = ../SPDialog.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FEC50E7B4BA5C8F61008AEEF /* Pods-SPDialog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPDialog_Example.release.xcconfig"; path = "Target Support Files/Pods-SPDialog_Example/Pods-SPDialog_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				8463EEDF2EDB2FC0C3CBC433 /* Pods-SPDialog_Tests.debug.xcconfig */,
 				A23B3594CBA551271023392A /* Pods-SPDialog_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,11 +302,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SPDialog_Example/Pods-SPDialog_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SPDialog/SPDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SPLayout/SPLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SPTheme/SPTheme.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SPDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SPLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SPTheme.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
