@@ -43,7 +43,6 @@ for (int i = 0; i < styles.count; i++) {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(i * 2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [SPDialog toast:@"ياخشىمۇ سىز ئەپەندىم " hideAfter:2 style:style];
     });
-
 }
 ```
 
