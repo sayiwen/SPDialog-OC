@@ -1,0 +1,30 @@
+{
+  "name": "SPDialog",
+  "version": "0.1.0",
+  "summary": "A short description of SPDialog.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sayiwen/SPDialog-OC",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sayiwen": "sayiwen@163.com"
+  },
+  "source": {
+    "git": "https://github.com/sayiwen/SPDialog-OC.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SPDialog/Classes/**/*",
+  "dependencies": {
+    "SPTheme": [
+      "~> 0.1.0"
+    ],
+    "SPLayout": [
+      "~> 0.1.0"
+    ]
+  }
+}

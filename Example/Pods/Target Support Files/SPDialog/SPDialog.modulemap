@@ -1,0 +1,6 @@
+framework module SPDialog {
+  umbrella header "SPDialog-umbrella.h"
+
+  export *
+  module * { export * }
+}

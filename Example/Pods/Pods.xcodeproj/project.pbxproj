@@ -1,0 +1,1625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012C834A03797FFFEFAD7D61CCE28677 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		0E8CCAE597756C61B2D7B60EEF4A29E4 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F31E036D6F946AFAD677C8E2BA52883 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		0F89E8C6BB75A73FBF912A10EFFF8624 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		19300CF68F5718C6F9C3476F1A98C1DC /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7CC7527FD599A1064055C060E14B43 /* MASCompositeConstraint.m */; };
+		1B433A1BF92BBD5811F61A000E4771C2 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = B28EC2F4C626ED77509645BE3805CB29 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B7DF5502B838C0AEDA12EDE0858AF5C /* SPFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CA4D96B9ECB41785E4E70AF26060 /* SPFont.m */; };
+		1F0D534FA9E0A2819D3D227055CBF446 /* SPTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = B1E9B0B45BF466FF3F635A9CC7CE3A16 /* SPTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21BEC07E5C617C1AFEEF8E91DA4C3DB0 /* SPTheme-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86FDB422B36B19D18392EFD5003E05F6 /* SPTheme-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2839E3707C14798138E8A0C72ACE4C25 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF4AF21902029EC43C354AC0978CE49 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		308EA78D3B875064B6BBCFAFDC92DAF7 /* SPDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D4228C81EB8A7E672F320FA7E62321E /* SPDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31F7C35C8863FA25A741A884E21BE7D0 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA8A3885BC33F25CB32442EB2449111 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3915C9063290783ECDD0838EF27F9EDD /* SPLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B07E37835711FC9AFBD59B75689AEFA6 /* SPLayout.m */; };
+		3D0EFFE30E3193932A034220E3C4C0FA /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 047EE388CF208BD5F57049BD98558C94 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		450209028FD45EB6A01A28B2607CF788 /* Pods-SPDialog_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B52A825814556DD20A2786FDFAA4D519 /* Pods-SPDialog_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		484D5ADDE9359DF3D4D695B82D4D8242 /* SPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD9F9C19838D1CC0BAA24B4B638A73 /* SPColor.m */; };
+		4CC9B43AD90714A316815FAA71DC89A2 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 470C5CD1265270E95A8A89443C727427 /* MASConstraintMaker.m */; };
+		53305278F1654F968B4E02DF71B098BE /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BCCE8C6C17F326AFEDF4357C62ADAF /* MASViewAttribute.m */; };
+		54BEFE9F75005D327641073B838C6776 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E17443EA85E103F4DD0553AB6BB942A /* MASLayoutConstraint.m */; };
+		567ABE0681AA82748435E32386DE12D7 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */; };
+		61225B0B9AEC591476E30C9A575013B3 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 86765B456E483806C4E13D2DD50E40A4 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		644C51DA2E10E9CEC32AF0CA76CFFF46 /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 751007628BC08633E22551E9BE689884 /* theme.plist */; };
+		67FBB357925BC9FA2824F565DED7C56C /* SPFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 786F3E0412A3F9C730B5125954FEA7D3 /* SPFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70EE1B5856397438AA24D58301F9CA96 /* ukij_tuz_tom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45C6E8A4526236D41D7A48258D9783F0 /* ukij_tuz_tom.ttf */; };
+		715AB2C777F6FCAB5EE0C667A909B698 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = A78D3443F105E00FC21FE5A357C8F716 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7446C2EF59AF13F05576711F0EA42202 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		78251F42EB680FB72F040A1986279CD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		79DC1F115CCEBA06FF3EB6B364F2AA1B /* SPLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED7BF2C56F268EA6DF02313583E0BB2 /* SPLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B05A8DE072977F90AA84A0E98E23167 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9073C3B74BC30C55B4EB5B2A596EAD72 /* MASConstraint.m */; };
+		8171D105E2C5CD3C1357D544942B4446 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		81E0823949F1CE7BFED75B6DB5905339 /* SPDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F875453BE86BA68F285BD075DB8A10D /* SPDialog-dummy.m */; };
+		8AE868BC3E2E6FC92F4717835180C47D /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EC6C5D191587619B42076546EDC448 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91B25EC08F402020B59DB7ED4A83C761 /* SPDialogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A40E6A4E240074D7AB8123E3FF87979 /* SPDialogManager.m */; };
+		9992492CD338839F8E6ED65925E44414 /* SPTheme-SPTheme in Resources */ = {isa = PBXBuildFile; fileRef = 594EA9263752DA83255A3D172EAF440B /* SPTheme-SPTheme */; };
+		99EB87EF568244E8D1AD93BA987EA32F /* SPDialogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFAA2CA318CB2C39B7C845F30DC907BD /* SPDialogManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1336977ADAAD492D6CFD089A8C6E358 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4497913DB548AE2E03103D3A97F34F /* View+MASAdditions.m */; };
+		A83A6757F6C0003332D57B41FE24BEEA /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 837834476F3329FA118B081516D4FC28 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF616B1AC31EF584F0E4177D897EAEC1 /* SPTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = C34C3CD0BAC2301CE68F022D168B7A89 /* SPTheme.m */; };
+		B0055C3BC43E375300C54F6E31E42176 /* SPLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB291B1A307BD17AD4C97D2EA972187 /* SPLayout-dummy.m */; };
+		B10646B6AF73D470221EF25A5DEEEB6F /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55960467D1B758EC688A18A171012E78 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B303A7530A36F0AC6EDCA5966BFE8087 /* Pods-SPDialog_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2AB97155782F83753297DEA1D038F3A /* Pods-SPDialog_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B47FDDC3F2B0F01521A90011FD09B6AF /* Pods-SPDialog_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DEA56BD22E694E86F81F204BE4F8BF /* Pods-SPDialog_Example-dummy.m */; };
+		B4BE7728D87333785F811FED48CF134E /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD89987EC7EAE20D7034EEF9935E7CC /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4C16090F21EF89CFF020C1EA416FFFB /* SPTheme-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7339C7E1C04819CD67F9FAEE361EF33 /* SPTheme-dummy.m */; };
+		B61AA5459C2B345AD6D84D8A5111C9CE /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF8069504999FB8BF5FA1529175AA74 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAEF4FC43A90EE04F67AFA84F6BAC589 /* Pods-SPDialog_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D2B769D20DA87FB16334C3BE4BA35D /* Pods-SPDialog_Tests-dummy.m */; };
+		BE050DABC9BF806B3379AFD2367F4194 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E7851906D7976272A721C8C4E0CE9092 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA99A49E5F8DA685E33DABA606041FF /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CA69FDFD4D7BB11F8E3E2E7A0B9879 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7D83D99D755676EF8A09CC77845BAF4 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 071EEE0A3CE36E163E09EA7F7915F1DE /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		C9375F078B54A9030D4B9C2E73222A5D /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEEBD88282BA13360CAA867D8465C75 /* NSArray+MASAdditions.m */; };
+		CECDB459AFB5AD0040AF86378F2DBF97 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A85AE9E36F67A1B513CB8DA940771B4F /* Masonry-dummy.m */; };
+		CEE7BDCC3F3073CBBF7A76BC6CF3E519 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D12E9F350C1C8076BE92719B89951AD8 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2D42747D8A8B073700CE663F6D7965A /* SPColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FB2618BD03C9B607EE8A26371B19429F /* SPColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D97D3D24519714E7651BD3EBBA96FB /* SPDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E3837BD0D3542AECA616F80B3D5AF4C8 /* SPDialog.m */; };
+		E53FCD0CD1526B53074ED4EEF00131E9 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E12E3D2779B5C7A8301A94F715DB4C /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FB269534400D40C1CE67D18EDD8A9A /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */; };
+		EA8D5D569ED6A8CDB4E32EB5AE0E2925 /* SPLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1274F87FC787EAD9D7F4A7DB964659CF /* SPLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4441B9D36AE44A40DDB4307E3C3A312 /* SPDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = F5857798DBE96208FF803ECCEBD7D013 /* SPDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB82CF94A14ED42642BD78DA840F0A76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06FFCB273F3B8D1B8BFB5EA9EA6185D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69266E3D5F04D196D7DD88B6F2B4E40C;
+			remoteInfo = "Pods-SPDialog_Example";
+		};
+		1817A20C06F9D5F9C192BE68E180674B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F61D55DC829EAB66779DDBBE772A87;
+			remoteInfo = "SPTheme-SPTheme";
+		};
+		42102892723E7E6EEE04B01013EF7922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		4BE50C5D91F0723969CDB3909E45CE02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FE5B18F1B7C063D76424E0F012980FB;
+			remoteInfo = SPLayout;
+		};
+		718C8493A97B7BFA907CA3B203F5C48D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB368C29576279FC947BC69A760B70E3;
+			remoteInfo = SPTheme;
+		};
+		74721060FDBEA11D5069A6675B699594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB368C29576279FC947BC69A760B70E3;
+			remoteInfo = SPTheme;
+		};
+		896E391DECA752F8B7B3C4E5030AAE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		BB5986CA459D4FF3E6B09D9BF6797A81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FE5B18F1B7C063D76424E0F012980FB;
+			remoteInfo = SPLayout;
+		};
+		F4492A59B8547F01940B7BC51E53ED7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FF6E4567403EA974EE8E5541A9C4BDE;
+			remoteInfo = SPDialog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F9448105FF907662E0416494078AF5 /* Pods-SPDialog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SPDialog_Example.release.xcconfig"; sourceTree = "<group>"; };
+		02CA69FDFD4D7BB11F8E3E2E7A0B9879 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		047EE388CF208BD5F57049BD98558C94 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		05770BE64085797E8EF60FB6EDB7D3F4 /* Pods-SPDialog_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SPDialog_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		06BC7912B4740858853CFB4C829783A8 /* SPDialog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SPDialog.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		071EEE0A3CE36E163E09EA7F7915F1DE /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		0C07E9047C0EDBB04D8967A5B2267B63 /* SPLayout */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SPLayout; path = SPLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1171CA4D96B9ECB41785E4E70AF26060 /* SPFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPFont.m; path = SPTheme/Classes/SPFont.m; sourceTree = "<group>"; };
+		1194BD5A5F36834F0E58706EE96A4A94 /* SPDialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPDialog.release.xcconfig; sourceTree = "<group>"; };
+		1274F87FC787EAD9D7F4A7DB964659CF /* SPLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPLayout-umbrella.h"; sourceTree = "<group>"; };
+		1B9096A53DDCCC6D84594EF8A8091677 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1E777109589E366C7C206D5105290061 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1FA6FC81E99388004519B80BBF2FC76E /* SPLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPLayout.release.xcconfig; sourceTree = "<group>"; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2197604D429EDBA59B08770ABDC5AF23 /* Pods-SPDialog_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SPDialog_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		26D2B769D20DA87FB16334C3BE4BA35D /* Pods-SPDialog_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SPDialog_Tests-dummy.m"; sourceTree = "<group>"; };
+		27E12E3D2779B5C7A8301A94F715DB4C /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		2A9946FA56E515E70E8CA90D76121772 /* Pods-SPDialog_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SPDialog_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2D4228C81EB8A7E672F320FA7E62321E /* SPDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPDialog-umbrella.h"; sourceTree = "<group>"; };
+		30EC6C5D191587619B42076546EDC448 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		366CE90670C8D8409FF954D8DDAD0A47 /* SPLayout.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SPLayout.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3E537C1F47DA8B06DA4A71E3D14F4DE4 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
+		3ED7BF2C56F268EA6DF02313583E0BB2 /* SPLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPLayout.h; path = SPLayout/Classes/SPLayout.h; sourceTree = "<group>"; };
+		419A961AD957E23BAB6A998ED7623134 /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
+		45BA2F2A665A5D0A7FB5AB545A445CE7 /* SPTheme */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SPTheme; path = SPTheme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45C6E8A4526236D41D7A48258D9783F0 /* ukij_tuz_tom.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = ukij_tuz_tom.ttf; path = SPTheme/Assets/ukij_tuz_tom.ttf; sourceTree = "<group>"; };
+		45F7E1349C6EB91D34297C1D1C4FA871 /* Pods-SPDialog_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SPDialog_Tests.modulemap"; sourceTree = "<group>"; };
+		470C5CD1265270E95A8A89443C727427 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		4925B71F0CCC0CC17B961942FEA2AB77 /* Pods-SPDialog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SPDialog_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4AD89987EC7EAE20D7034EEF9935E7CC /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		55960467D1B758EC688A18A171012E78 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		594EA9263752DA83255A3D172EAF440B /* SPTheme-SPTheme */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SPTheme-SPTheme"; path = SPTheme.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B66CC68F569828A8B50996D6C0973B3 /* Pods-SPDialog_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SPDialog_Tests"; path = Pods_SPDialog_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E07835BB9A18F95C6BF22AB805894AC /* SPDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPDialog-prefix.pch"; sourceTree = "<group>"; };
+		5F875453BE86BA68F285BD075DB8A10D /* SPDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SPDialog-dummy.m"; sourceTree = "<group>"; };
+		607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		6402AAE32CA8493F81E7972171DD0B73 /* Pods-SPDialog_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SPDialog_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		642CD5CCD48F87531A9E3ECC44F1B073 /* SPDialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPDialog.debug.xcconfig; sourceTree = "<group>"; };
+		6909551650CC4356AA46960A84D4054D /* SPTheme-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPTheme-prefix.pch"; sourceTree = "<group>"; };
+		6C86F38F14F7D56F708AD1532C826078 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6CF8069504999FB8BF5FA1529175AA74 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
+		6E17443EA85E103F4DD0553AB6BB942A /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		6E3295C990390B33CC7DE6A3FE56E15F /* Pods-SPDialog_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SPDialog_Example"; path = Pods_SPDialog_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF4AF21902029EC43C354AC0978CE49 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		72BD9F9C19838D1CC0BAA24B4B638A73 /* SPColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPColor.m; path = SPTheme/Classes/SPColor.m; sourceTree = "<group>"; };
+		751007628BC08633E22551E9BE689884 /* theme.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = theme.plist; path = SPTheme/Assets/theme.plist; sourceTree = "<group>"; };
+		76F315DC34BC83FF0E1515813FCDBDE9 /* SPTheme-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SPTheme-Info.plist"; sourceTree = "<group>"; };
+		786F3E0412A3F9C730B5125954FEA7D3 /* SPFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPFont.h; path = SPTheme/Classes/SPFont.h; sourceTree = "<group>"; };
+		81B1B6B7F997D81C5A7E520E1B9C682D /* Pods-SPDialog_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SPDialog_Example-frameworks.sh"; sourceTree = "<group>"; };
+		837834476F3329FA118B081516D4FC28 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		86765B456E483806C4E13D2DD50E40A4 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		86FDB422B36B19D18392EFD5003E05F6 /* SPTheme-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPTheme-umbrella.h"; sourceTree = "<group>"; };
+		8912F6D990551B5078C7138140024149 /* SPLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SPLayout-Info.plist"; sourceTree = "<group>"; };
+		8A40E6A4E240074D7AB8123E3FF87979 /* SPDialogManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPDialogManager.m; path = SPDialog/Classes/SPDialogManager.m; sourceTree = "<group>"; };
+		8AEEBD88282BA13360CAA867D8465C75 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		8D8F289458ED03F088CFC9BB3D78CD36 /* Pods-SPDialog_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SPDialog_Tests-Info.plist"; sourceTree = "<group>"; };
+		9073C3B74BC30C55B4EB5B2A596EAD72 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		9B7ACE11CD6E4954580E84EDF8AE636D /* SPTheme.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SPTheme.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0E1CB47375794A6DB355ADE4C814A03 /* SPTheme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPTheme.release.xcconfig; sourceTree = "<group>"; };
+		A1B7A30BC95933BE19C4FAE1FA0D9F7E /* Pods-SPDialog_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SPDialog_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A2CD67DA514B54DCFCB14EC6896E6579 /* SPLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SPLayout.modulemap; sourceTree = "<group>"; };
+		A7339C7E1C04819CD67F9FAEE361EF33 /* SPTheme-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SPTheme-dummy.m"; sourceTree = "<group>"; };
+		A78D3443F105E00FC21FE5A357C8F716 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		A82BB3461533AFF74E67ADB5F9B72294 /* SPTheme.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SPTheme.modulemap; sourceTree = "<group>"; };
+		A85AE9E36F67A1B513CB8DA940771B4F /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		A8BCCE8C6C17F326AFEDF4357C62ADAF /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		A9E05F0C1F7D2771A3A8CB1A84AF63AD /* SPLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPLayout-prefix.pch"; sourceTree = "<group>"; };
+		ACBE42D0E4A2D301BDBCB12AE41C08BF /* SPDialog */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SPDialog; path = SPDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4497913DB548AE2E03103D3A97F34F /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		AFAA2CA318CB2C39B7C845F30DC907BD /* SPDialogManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPDialogManager.h; path = SPDialog/Classes/SPDialogManager.h; sourceTree = "<group>"; };
+		B00F1B1199AB6B28E5074E54A8F59B5F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B07E37835711FC9AFBD59B75689AEFA6 /* SPLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPLayout.m; path = SPLayout/Classes/SPLayout.m; sourceTree = "<group>"; };
+		B1E9B0B45BF466FF3F635A9CC7CE3A16 /* SPTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTheme.h; path = SPTheme/Classes/SPTheme.h; sourceTree = "<group>"; };
+		B28EC2F4C626ED77509645BE3805CB29 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		B52A825814556DD20A2786FDFAA4D519 /* Pods-SPDialog_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SPDialog_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B7568F3CCA584B873DEB27D707F2B5C0 /* SPTheme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPTheme.debug.xcconfig; sourceTree = "<group>"; };
+		BBFC4CE2577BB7901E3B50D9C24A3C16 /* SPDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SPDialog-Info.plist"; sourceTree = "<group>"; };
+		BDB676D9D5D3AFD89D8DDCE3369D4BAC /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		C34C3CD0BAC2301CE68F022D168B7A89 /* SPTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTheme.m; path = SPTheme/Classes/SPTheme.m; sourceTree = "<group>"; };
+		CEB291B1A307BD17AD4C97D2EA972187 /* SPLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SPLayout-dummy.m"; sourceTree = "<group>"; };
+		D12E9F350C1C8076BE92719B89951AD8 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		D1BE621D8F980820011D3EDDFE3B5649 /* SPLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPLayout.debug.xcconfig; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D2AB97155782F83753297DEA1D038F3A /* Pods-SPDialog_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SPDialog_Example-umbrella.h"; sourceTree = "<group>"; };
+		D3990CD976A5A7F5F287834B150931FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D5764A444D568191345F6577E49909B1 /* Pods-SPDialog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SPDialog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DFA1012B6A8BD076CD9F09831AE37A01 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
+		E3837BD0D3542AECA616F80B3D5AF4C8 /* SPDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPDialog.m; path = SPDialog/Classes/SPDialog.m; sourceTree = "<group>"; };
+		E5770CD76A827F394D470FD3C59EB63A /* ResourceBundle-SPTheme-SPTheme-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SPTheme-SPTheme-Info.plist"; sourceTree = "<group>"; };
+		E7851906D7976272A721C8C4E0CE9092 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		E87039E0EDB5E256497C1E3F1373CF7B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E9E02794B0DE02EB416DC1D6BBD2A50E /* Pods-SPDialog_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SPDialog_Example.modulemap"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB7CC7527FD599A1064055C060E14B43 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		EDA8A3885BC33F25CB32442EB2449111 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		F0DEA56BD22E694E86F81F204BE4F8BF /* Pods-SPDialog_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SPDialog_Example-dummy.m"; sourceTree = "<group>"; };
+		F0DF2ED8F97BC75C5CFD770000C95DFD /* Pods-SPDialog_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SPDialog_Example-Info.plist"; sourceTree = "<group>"; };
+		F0F23509E4003ED979CEC87DAAC0C608 /* SPDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SPDialog.modulemap; sourceTree = "<group>"; };
+		F287598D192FA586BD4AECCD85B988A4 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
+		F5857798DBE96208FF803ECCEBD7D013 /* SPDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPDialog.h; path = SPDialog/Classes/SPDialog.h; sourceTree = "<group>"; };
+		FB2618BD03C9B607EE8A26371B19429F /* SPColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPColor.h; path = SPTheme/Classes/SPColor.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43DFBCA034E296AC8DD67A04F20C497A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB82CF94A14ED42642BD78DA840F0A76 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44307884BA94A6A14BB33E385D8D85B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F89E8C6BB75A73FBF912A10EFFF8624 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A7197DD590FED39D74229CEF458EF8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7446C2EF59AF13F05576711F0EA42202 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF9B5019617433D25E503B062354D01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F31E036D6F946AFAD677C8E2BA52883 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB6E60691DB58C9D2C0F26733F25C2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78251F42EB680FB72F040A1986279CD2 /* Foundation.framework in Frameworks */,
+				8171D105E2C5CD3C1357D544942B4446 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0238472F28604D739D31BF65DF46B6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3AD4918A00E9426EE3AB89BE4E9B332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012C834A03797FFFEFAD7D61CCE28677 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0890ECD23472E126F0B202C8FA59FACF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E87039E0EDB5E256497C1E3F1373CF7B /* LICENSE */,
+				1E777109589E366C7C206D5105290061 /* README.md */,
+				9B7ACE11CD6E4954580E84EDF8AE636D /* SPTheme.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		09B9030B6D3790D5A16C2C8ACB416371 /* SPLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3ED7BF2C56F268EA6DF02313583E0BB2 /* SPLayout.h */,
+				B07E37835711FC9AFBD59B75689AEFA6 /* SPLayout.m */,
+				2A3AF09E94A2308F0346105E4651B134 /* Pod */,
+				A8923A64495098C391DDF14409885899 /* Support Files */,
+			);
+			name = SPLayout;
+			path = ../../../SPLayout;
+			sourceTree = "<group>";
+		};
+		0CCC0CD98AB951949302B433AFE762AD /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				4AD89987EC7EAE20D7034EEF9935E7CC /* MASCompositeConstraint.h */,
+				EB7CC7527FD599A1064055C060E14B43 /* MASCompositeConstraint.m */,
+				02CA69FDFD4D7BB11F8E3E2E7A0B9879 /* MASConstraint.h */,
+				9073C3B74BC30C55B4EB5B2A596EAD72 /* MASConstraint.m */,
+				837834476F3329FA118B081516D4FC28 /* MASConstraint+Private.h */,
+				B28EC2F4C626ED77509645BE3805CB29 /* MASConstraintMaker.h */,
+				470C5CD1265270E95A8A89443C727427 /* MASConstraintMaker.m */,
+				6FF4AF21902029EC43C354AC0978CE49 /* MASLayoutConstraint.h */,
+				6E17443EA85E103F4DD0553AB6BB942A /* MASLayoutConstraint.m */,
+				EDA8A3885BC33F25CB32442EB2449111 /* Masonry.h */,
+				607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */,
+				A78D3443F105E00FC21FE5A357C8F716 /* MASViewAttribute.h */,
+				A8BCCE8C6C17F326AFEDF4357C62ADAF /* MASViewAttribute.m */,
+				D12E9F350C1C8076BE92719B89951AD8 /* MASViewConstraint.h */,
+				72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */,
+				30EC6C5D191587619B42076546EDC448 /* NSArray+MASAdditions.h */,
+				8AEEBD88282BA13360CAA867D8465C75 /* NSArray+MASAdditions.m */,
+				27E12E3D2779B5C7A8301A94F715DB4C /* NSArray+MASShorthandAdditions.h */,
+				E7851906D7976272A721C8C4E0CE9092 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				071EEE0A3CE36E163E09EA7F7915F1DE /* NSLayoutConstraint+MASDebugAdditions.m */,
+				047EE388CF208BD5F57049BD98558C94 /* View+MASAdditions.h */,
+				AF4497913DB548AE2E03103D3A97F34F /* View+MASAdditions.m */,
+				86765B456E483806C4E13D2DD50E40A4 /* View+MASShorthandAdditions.h */,
+				55960467D1B758EC688A18A171012E78 /* ViewController+MASAdditions.h */,
+				342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */,
+				C84A449C2DE4F91F0620A5147DD42E0F /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C3847A03BFC2CDC77D3F30C8D15E137 /* SPDialog */ = {
+			isa = PBXGroup;
+			children = (
+				F5857798DBE96208FF803ECCEBD7D013 /* SPDialog.h */,
+				E3837BD0D3542AECA616F80B3D5AF4C8 /* SPDialog.m */,
+				AFAA2CA318CB2C39B7C845F30DC907BD /* SPDialogManager.h */,
+				8A40E6A4E240074D7AB8123E3FF87979 /* SPDialogManager.m */,
+				595A29A036C69C50F2DC713FF14BF739 /* Pod */,
+				F413439DA23021684484BB159FE2328D /* Support Files */,
+			);
+			name = SPDialog;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2A3AF09E94A2308F0346105E4651B134 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D3990CD976A5A7F5F287834B150931FC /* LICENSE */,
+				1B9096A53DDCCC6D84594EF8A8091677 /* README.md */,
+				366CE90670C8D8409FF954D8DDAD0A47 /* SPLayout.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		4D54F49608B25F922874C9C8CE25E9B6 /* Pods-SPDialog_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				45F7E1349C6EB91D34297C1D1C4FA871 /* Pods-SPDialog_Tests.modulemap */,
+				6402AAE32CA8493F81E7972171DD0B73 /* Pods-SPDialog_Tests-acknowledgements.markdown */,
+				05770BE64085797E8EF60FB6EDB7D3F4 /* Pods-SPDialog_Tests-acknowledgements.plist */,
+				26D2B769D20DA87FB16334C3BE4BA35D /* Pods-SPDialog_Tests-dummy.m */,
+				8D8F289458ED03F088CFC9BB3D78CD36 /* Pods-SPDialog_Tests-Info.plist */,
+				B52A825814556DD20A2786FDFAA4D519 /* Pods-SPDialog_Tests-umbrella.h */,
+				D5764A444D568191345F6577E49909B1 /* Pods-SPDialog_Tests.debug.xcconfig */,
+				2197604D429EDBA59B08770ABDC5AF23 /* Pods-SPDialog_Tests.release.xcconfig */,
+			);
+			name = "Pods-SPDialog_Tests";
+			path = "Target Support Files/Pods-SPDialog_Tests";
+			sourceTree = "<group>";
+		};
+		4F9F536A5D51316FDB41F53D92744FD1 /* Pods-SPDialog_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E9E02794B0DE02EB416DC1D6BBD2A50E /* Pods-SPDialog_Example.modulemap */,
+				2A9946FA56E515E70E8CA90D76121772 /* Pods-SPDialog_Example-acknowledgements.markdown */,
+				A1B7A30BC95933BE19C4FAE1FA0D9F7E /* Pods-SPDialog_Example-acknowledgements.plist */,
+				F0DEA56BD22E694E86F81F204BE4F8BF /* Pods-SPDialog_Example-dummy.m */,
+				81B1B6B7F997D81C5A7E520E1B9C682D /* Pods-SPDialog_Example-frameworks.sh */,
+				F0DF2ED8F97BC75C5CFD770000C95DFD /* Pods-SPDialog_Example-Info.plist */,
+				D2AB97155782F83753297DEA1D038F3A /* Pods-SPDialog_Example-umbrella.h */,
+				4925B71F0CCC0CC17B961942FEA2AB77 /* Pods-SPDialog_Example.debug.xcconfig */,
+				00F9448105FF907662E0416494078AF5 /* Pods-SPDialog_Example.release.xcconfig */,
+			);
+			name = "Pods-SPDialog_Example";
+			path = "Target Support Files/Pods-SPDialog_Example";
+			sourceTree = "<group>";
+		};
+		595A29A036C69C50F2DC713FF14BF739 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B00F1B1199AB6B28E5074E54A8F59B5F /* LICENSE */,
+				6C86F38F14F7D56F708AD1532C826078 /* README.md */,
+				06BC7912B4740858853CFB4C829783A8 /* SPDialog.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		735AAAD08C97AD1752FB5C4FDBE2208E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5770CD76A827F394D470FD3C59EB63A /* ResourceBundle-SPTheme-SPTheme-Info.plist */,
+				A82BB3461533AFF74E67ADB5F9B72294 /* SPTheme.modulemap */,
+				A7339C7E1C04819CD67F9FAEE361EF33 /* SPTheme-dummy.m */,
+				76F315DC34BC83FF0E1515813FCDBDE9 /* SPTheme-Info.plist */,
+				6909551650CC4356AA46960A84D4054D /* SPTheme-prefix.pch */,
+				86FDB422B36B19D18392EFD5003E05F6 /* SPTheme-umbrella.h */,
+				B7568F3CCA584B873DEB27D707F2B5C0 /* SPTheme.debug.xcconfig */,
+				A0E1CB47375794A6DB355ADE4C814A03 /* SPTheme.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../SPDialog/Example/Pods/Target Support Files/SPTheme";
+			sourceTree = "<group>";
+		};
+		7529FD53BCE26816CCD46658378AAF1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CCC0CD98AB951949302B433AFE762AD /* Masonry */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		793F89DEEAD770ACF411E076C0592172 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FFED36A657123030ABB700256D73F15 /* Masonry */,
+				6E3295C990390B33CC7DE6A3FE56E15F /* Pods-SPDialog_Example */,
+				5B66CC68F569828A8B50996D6C0973B3 /* Pods-SPDialog_Tests */,
+				ACBE42D0E4A2D301BDBCB12AE41C08BF /* SPDialog */,
+				0C07E9047C0EDBB04D8967A5B2267B63 /* SPLayout */,
+				45BA2F2A665A5D0A7FB5AB545A445CE7 /* SPTheme */,
+				594EA9263752DA83255A3D172EAF440B /* SPTheme-SPTheme */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79CB6D3AB4BBF36D028F9AE6DADBFBBF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C3847A03BFC2CDC77D3F30C8D15E137 /* SPDialog */,
+				09B9030B6D3790D5A16C2C8ACB416371 /* SPLayout */,
+				B2370A172DE011F39F5E06C8C948F808 /* SPTheme */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A8923A64495098C391DDF14409885899 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2CD67DA514B54DCFCB14EC6896E6579 /* SPLayout.modulemap */,
+				CEB291B1A307BD17AD4C97D2EA972187 /* SPLayout-dummy.m */,
+				8912F6D990551B5078C7138140024149 /* SPLayout-Info.plist */,
+				A9E05F0C1F7D2771A3A8CB1A84AF63AD /* SPLayout-prefix.pch */,
+				1274F87FC787EAD9D7F4A7DB964659CF /* SPLayout-umbrella.h */,
+				D1BE621D8F980820011D3EDDFE3B5649 /* SPLayout.debug.xcconfig */,
+				1FA6FC81E99388004519B80BBF2FC76E /* SPLayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../SPDialog/Example/Pods/Target Support Files/SPLayout";
+			sourceTree = "<group>";
+		};
+		B2370A172DE011F39F5E06C8C948F808 /* SPTheme */ = {
+			isa = PBXGroup;
+			children = (
+				FB2618BD03C9B607EE8A26371B19429F /* SPColor.h */,
+				72BD9F9C19838D1CC0BAA24B4B638A73 /* SPColor.m */,
+				786F3E0412A3F9C730B5125954FEA7D3 /* SPFont.h */,
+				1171CA4D96B9ECB41785E4E70AF26060 /* SPFont.m */,
+				B1E9B0B45BF466FF3F635A9CC7CE3A16 /* SPTheme.h */,
+				C34C3CD0BAC2301CE68F022D168B7A89 /* SPTheme.m */,
+				751007628BC08633E22551E9BE689884 /* theme.plist */,
+				45C6E8A4526236D41D7A48258D9783F0 /* ukij_tuz_tom.ttf */,
+				0890ECD23472E126F0B202C8FA59FACF /* Pod */,
+				735AAAD08C97AD1752FB5C4FDBE2208E /* Support Files */,
+			);
+			name = SPTheme;
+			path = ../../../SPTheme;
+			sourceTree = "<group>";
+		};
+		BBEE2F8715A80E75295ED892F4B33502 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F9F536A5D51316FDB41F53D92744FD1 /* Pods-SPDialog_Example */,
+				4D54F49608B25F922874C9C8CE25E9B6 /* Pods-SPDialog_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C84A449C2DE4F91F0620A5147DD42E0F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E537C1F47DA8B06DA4A71E3D14F4DE4 /* Masonry.modulemap */,
+				A85AE9E36F67A1B513CB8DA940771B4F /* Masonry-dummy.m */,
+				DFA1012B6A8BD076CD9F09831AE37A01 /* Masonry-Info.plist */,
+				BDB676D9D5D3AFD89D8DDCE3369D4BAC /* Masonry-prefix.pch */,
+				6CF8069504999FB8BF5FA1529175AA74 /* Masonry-umbrella.h */,
+				F287598D192FA586BD4AECCD85B988A4 /* Masonry.debug.xcconfig */,
+				419A961AD957E23BAB6A998ED7623134 /* Masonry.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				79CB6D3AB4BBF36D028F9AE6DADBFBBF /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				7529FD53BCE26816CCD46658378AAF1B /* Pods */,
+				793F89DEEAD770ACF411E076C0592172 /* Products */,
+				BBEE2F8715A80E75295ED892F4B33502 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F413439DA23021684484BB159FE2328D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0F23509E4003ED979CEC87DAAC0C608 /* SPDialog.modulemap */,
+				5F875453BE86BA68F285BD075DB8A10D /* SPDialog-dummy.m */,
+				BBFC4CE2577BB7901E3B50D9C24A3C16 /* SPDialog-Info.plist */,
+				5E07835BB9A18F95C6BF22AB805894AC /* SPDialog-prefix.pch */,
+				2D4228C81EB8A7E672F320FA7E62321E /* SPDialog-umbrella.h */,
+				642CD5CCD48F87531A9E3ECC44F1B073 /* SPDialog.debug.xcconfig */,
+				1194BD5A5F36834F0E58706EE96A4A94 /* SPDialog.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SPDialog";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5DC49086C87EC8458C60A00EFA68F362 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450209028FD45EB6A01A28B2607CF788 /* Pods-SPDialog_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D073DD2504A28CB0E4C0AF847C58832 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4441B9D36AE44A40DDB4307E3C3A312 /* SPDialog.h in Headers */,
+				308EA78D3B875064B6BBCFAFDC92DAF7 /* SPDialog-umbrella.h in Headers */,
+				99EB87EF568244E8D1AD93BA987EA32F /* SPDialogManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B7C7C19E3BEF4B830D7D942139EB920 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B303A7530A36F0AC6EDCA5966BFE8087 /* Pods-SPDialog_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88249303A539FB130B7888CF95D26171 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79DC1F115CCEBA06FF3EB6B364F2AA1B /* SPLayout.h in Headers */,
+				EA8D5D569ED6A8CDB4E32EB5AE0E2925 /* SPLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A8659D86DFD4C224D177332D003EDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BE7728D87333785F811FED48CF134E /* MASCompositeConstraint.h in Headers */,
+				BEA99A49E5F8DA685E33DABA606041FF /* MASConstraint.h in Headers */,
+				A83A6757F6C0003332D57B41FE24BEEA /* MASConstraint+Private.h in Headers */,
+				1B433A1BF92BBD5811F61A000E4771C2 /* MASConstraintMaker.h in Headers */,
+				2839E3707C14798138E8A0C72ACE4C25 /* MASLayoutConstraint.h in Headers */,
+				31F7C35C8863FA25A741A884E21BE7D0 /* Masonry.h in Headers */,
+				B61AA5459C2B345AD6D84D8A5111C9CE /* Masonry-umbrella.h in Headers */,
+				0E8CCAE597756C61B2D7B60EEF4A29E4 /* MASUtilities.h in Headers */,
+				715AB2C777F6FCAB5EE0C667A909B698 /* MASViewAttribute.h in Headers */,
+				CEE7BDCC3F3073CBBF7A76BC6CF3E519 /* MASViewConstraint.h in Headers */,
+				8AE868BC3E2E6FC92F4717835180C47D /* NSArray+MASAdditions.h in Headers */,
+				E53FCD0CD1526B53074ED4EEF00131E9 /* NSArray+MASShorthandAdditions.h in Headers */,
+				BE050DABC9BF806B3379AFD2367F4194 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				3D0EFFE30E3193932A034220E3C4C0FA /* View+MASAdditions.h in Headers */,
+				61225B0B9AEC591476E30C9A575013B3 /* View+MASShorthandAdditions.h in Headers */,
+				B10646B6AF73D470221EF25A5DEEEB6F /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E5B91ED4D66E5F6F5927309EE6D9A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D42747D8A8B073700CE663F6D7965A /* SPColor.h in Headers */,
+				67FBB357925BC9FA2824F565DED7C56C /* SPFont.h in Headers */,
+				1F0D534FA9E0A2819D3D227055CBF446 /* SPTheme.h in Headers */,
+				21BEC07E5C617C1AFEEF8E91DA4C3DB0 /* SPTheme-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		18F61D55DC829EAB66779DDBBE772A87 /* SPTheme-SPTheme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE4EBFAA0482B8B472E4A91831423CB /* Build configuration list for PBXNativeTarget "SPTheme-SPTheme" */;
+			buildPhases = (
+				1E97C2A08E744116A6EBE58A515D750F /* Sources */,
+				D0238472F28604D739D31BF65DF46B6F /* Frameworks */,
+				46A3B15295549578C7C60D58076BEA43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SPTheme-SPTheme";
+			productName = SPTheme;
+			productReference = 594EA9263752DA83255A3D172EAF440B /* SPTheme-SPTheme */;
+			productType = "com.apple.product-type.bundle";
+		};
+		1FE5B18F1B7C063D76424E0F012980FB /* SPLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0414EDD5CC83AE0F0BE0309D0E6AB218 /* Build configuration list for PBXNativeTarget "SPLayout" */;
+			buildPhases = (
+				88249303A539FB130B7888CF95D26171 /* Headers */,
+				72FD96D246386F7CBC0D4C4C7438133C /* Sources */,
+				43DFBCA034E296AC8DD67A04F20C497A /* Frameworks */,
+				1CE8E78A8AC5F8EEBD6B04999913184D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F247A4A69F83E855A8A86B9B114994A /* PBXTargetDependency */,
+			);
+			name = SPLayout;
+			productName = SPLayout;
+			productReference = 0C07E9047C0EDBB04D8967A5B2267B63 /* SPLayout */;
+			productType = "com.apple.product-type.framework";
+		};
+		32FF2CDDD2A7EBF6B837C55D98E909BC /* Pods-SPDialog_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E2F68C0B81887E6131394E568C43232 /* Build configuration list for PBXNativeTarget "Pods-SPDialog_Tests" */;
+			buildPhases = (
+				5DC49086C87EC8458C60A00EFA68F362 /* Headers */,
+				CC469DE475AC0579C2E2986BB60D6731 /* Sources */,
+				44307884BA94A6A14BB33E385D8D85B0 /* Frameworks */,
+				FAAF1F634D3F5EDE9CB4EF58C68423C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58E8847F92D06ECCCD2A7E6169F6DBEA /* PBXTargetDependency */,
+			);
+			name = "Pods-SPDialog_Tests";
+			productName = Pods_SPDialog_Tests;
+			productReference = 5B66CC68F569828A8B50996D6C0973B3 /* Pods-SPDialog_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104EC9250BF4EDE104280490293C13C3 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				99A8659D86DFD4C224D177332D003EDC /* Headers */,
+				3003736003A11F9793D9EA6DC169AED7 /* Sources */,
+				CCB6E60691DB58C9D2C0F26733F25C2E /* Frameworks */,
+				4522D50300D635138BEDBF5E60D39B53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 1FFED36A657123030ABB700256D73F15 /* Masonry */;
+			productType = "com.apple.product-type.framework";
+		};
+		69266E3D5F04D196D7DD88B6F2B4E40C /* Pods-SPDialog_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45D518ED08897059063E2942D0843DB6 /* Build configuration list for PBXNativeTarget "Pods-SPDialog_Example" */;
+			buildPhases = (
+				7B7C7C19E3BEF4B830D7D942139EB920 /* Headers */,
+				C2C0E86F4A5FCBC329A6D8F96173CFC2 /* Sources */,
+				E3AD4918A00E9426EE3AB89BE4E9B332 /* Frameworks */,
+				97A46ECD957529AB278DE6B8124E8D5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93BAC1474A9DA3F2C4D1BE4D8A986E43 /* PBXTargetDependency */,
+				52B1F0141FE5B82A094AEC30329DE22E /* PBXTargetDependency */,
+				C8BF8A16EF625A1178C74AB450BAD611 /* PBXTargetDependency */,
+				D5B16B6C86BE861685B05CBB8999B7E4 /* PBXTargetDependency */,
+			);
+			name = "Pods-SPDialog_Example";
+			productName = Pods_SPDialog_Example;
+			productReference = 6E3295C990390B33CC7DE6A3FE56E15F /* Pods-SPDialog_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		7FF6E4567403EA974EE8E5541A9C4BDE /* SPDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E04C68912817CE4B2DD5952D3793E1BB /* Build configuration list for PBXNativeTarget "SPDialog" */;
+			buildPhases = (
+				6D073DD2504A28CB0E4C0AF847C58832 /* Headers */,
+				2C9309DCE3BD6ABA240CD6324178499F /* Sources */,
+				9A7197DD590FED39D74229CEF458EF8A /* Frameworks */,
+				04B5961730D7C6D9C8566D49BF7FAD13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B785FDD51763827C6CBA357A5F8F2C4 /* PBXTargetDependency */,
+				D7FC61376C97F5785832BB6A2F2382FA /* PBXTargetDependency */,
+			);
+			name = SPDialog;
+			productName = SPDialog;
+			productReference = ACBE42D0E4A2D301BDBCB12AE41C08BF /* SPDialog */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB368C29576279FC947BC69A760B70E3 /* SPTheme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEBC0D7D44206C296FFA26ED136B9D12 /* Build configuration list for PBXNativeTarget "SPTheme" */;
+			buildPhases = (
+				B4E5B91ED4D66E5F6F5927309EE6D9A7 /* Headers */,
+				03D54A69089186BCC4ECB546740F1C29 /* Sources */,
+				AFF9B5019617433D25E503B062354D01 /* Frameworks */,
+				786ACE82755EBAB4741CFD8F249787E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC5D1C664386B12356C0128CDD4048F0 /* PBXTargetDependency */,
+			);
+			name = SPTheme;
+			productName = SPTheme;
+			productReference = 45BA2F2A665A5D0A7FB5AB545A445CE7 /* SPTheme */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 793F89DEEAD770ACF411E076C0592172 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
+				69266E3D5F04D196D7DD88B6F2B4E40C /* Pods-SPDialog_Example */,
+				32FF2CDDD2A7EBF6B837C55D98E909BC /* Pods-SPDialog_Tests */,
+				7FF6E4567403EA974EE8E5541A9C4BDE /* SPDialog */,
+				1FE5B18F1B7C063D76424E0F012980FB /* SPLayout */,
+				DB368C29576279FC947BC69A760B70E3 /* SPTheme */,
+				18F61D55DC829EAB66779DDBBE772A87 /* SPTheme-SPTheme */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04B5961730D7C6D9C8566D49BF7FAD13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE8E78A8AC5F8EEBD6B04999913184D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4522D50300D635138BEDBF5E60D39B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A3B15295549578C7C60D58076BEA43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				644C51DA2E10E9CEC32AF0CA76CFFF46 /* theme.plist in Resources */,
+				70EE1B5856397438AA24D58301F9CA96 /* ukij_tuz_tom.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		786ACE82755EBAB4741CFD8F249787E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9992492CD338839F8E6ED65925E44414 /* SPTheme-SPTheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A46ECD957529AB278DE6B8124E8D5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAF1F634D3F5EDE9CB4EF58C68423C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03D54A69089186BCC4ECB546740F1C29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484D5ADDE9359DF3D4D695B82D4D8242 /* SPColor.m in Sources */,
+				1B7DF5502B838C0AEDA12EDE0858AF5C /* SPFont.m in Sources */,
+				AF616B1AC31EF584F0E4177D897EAEC1 /* SPTheme.m in Sources */,
+				B4C16090F21EF89CFF020C1EA416FFFB /* SPTheme-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E97C2A08E744116A6EBE58A515D750F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C9309DCE3BD6ABA240CD6324178499F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D97D3D24519714E7651BD3EBBA96FB /* SPDialog.m in Sources */,
+				81E0823949F1CE7BFED75B6DB5905339 /* SPDialog-dummy.m in Sources */,
+				91B25EC08F402020B59DB7ED4A83C761 /* SPDialogManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3003736003A11F9793D9EA6DC169AED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19300CF68F5718C6F9C3476F1A98C1DC /* MASCompositeConstraint.m in Sources */,
+				7B05A8DE072977F90AA84A0E98E23167 /* MASConstraint.m in Sources */,
+				4CC9B43AD90714A316815FAA71DC89A2 /* MASConstraintMaker.m in Sources */,
+				54BEFE9F75005D327641073B838C6776 /* MASLayoutConstraint.m in Sources */,
+				CECDB459AFB5AD0040AF86378F2DBF97 /* Masonry-dummy.m in Sources */,
+				53305278F1654F968B4E02DF71B098BE /* MASViewAttribute.m in Sources */,
+				E6FB269534400D40C1CE67D18EDD8A9A /* MASViewConstraint.m in Sources */,
+				C9375F078B54A9030D4B9C2E73222A5D /* NSArray+MASAdditions.m in Sources */,
+				C7D83D99D755676EF8A09CC77845BAF4 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A1336977ADAAD492D6CFD089A8C6E358 /* View+MASAdditions.m in Sources */,
+				567ABE0681AA82748435E32386DE12D7 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FD96D246386F7CBC0D4C4C7438133C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3915C9063290783ECDD0838EF27F9EDD /* SPLayout.m in Sources */,
+				B0055C3BC43E375300C54F6E31E42176 /* SPLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2C0E86F4A5FCBC329A6D8F96173CFC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B47FDDC3F2B0F01521A90011FD09B6AF /* Pods-SPDialog_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC469DE475AC0579C2E2986BB60D6731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEF4FC43A90EE04F67AFA84F6BAC589 /* Pods-SPDialog_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B785FDD51763827C6CBA357A5F8F2C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPLayout;
+			target = 1FE5B18F1B7C063D76424E0F012980FB /* SPLayout */;
+			targetProxy = 4BE50C5D91F0723969CDB3909E45CE02 /* PBXContainerItemProxy */;
+		};
+		2F247A4A69F83E855A8A86B9B114994A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 896E391DECA752F8B7B3C4E5030AAE5C /* PBXContainerItemProxy */;
+		};
+		52B1F0141FE5B82A094AEC30329DE22E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPDialog;
+			target = 7FF6E4567403EA974EE8E5541A9C4BDE /* SPDialog */;
+			targetProxy = F4492A59B8547F01940B7BC51E53ED7E /* PBXContainerItemProxy */;
+		};
+		58E8847F92D06ECCCD2A7E6169F6DBEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SPDialog_Example";
+			target = 69266E3D5F04D196D7DD88B6F2B4E40C /* Pods-SPDialog_Example */;
+			targetProxy = 06FFCB273F3B8D1B8BFB5EA9EA6185D6 /* PBXContainerItemProxy */;
+		};
+		93BAC1474A9DA3F2C4D1BE4D8A986E43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 42102892723E7E6EEE04B01013EF7922 /* PBXContainerItemProxy */;
+		};
+		AC5D1C664386B12356C0128CDD4048F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SPTheme-SPTheme";
+			target = 18F61D55DC829EAB66779DDBBE772A87 /* SPTheme-SPTheme */;
+			targetProxy = 1817A20C06F9D5F9C192BE68E180674B /* PBXContainerItemProxy */;
+		};
+		C8BF8A16EF625A1178C74AB450BAD611 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPLayout;
+			target = 1FE5B18F1B7C063D76424E0F012980FB /* SPLayout */;
+			targetProxy = BB5986CA459D4FF3E6B09D9BF6797A81 /* PBXContainerItemProxy */;
+		};
+		D5B16B6C86BE861685B05CBB8999B7E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPTheme;
+			target = DB368C29576279FC947BC69A760B70E3 /* SPTheme */;
+			targetProxy = 718C8493A97B7BFA907CA3B203F5C48D /* PBXContainerItemProxy */;
+		};
+		D7FC61376C97F5785832BB6A2F2382FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPTheme;
+			target = DB368C29576279FC947BC69A760B70E3 /* SPTheme */;
+			targetProxy = 74721060FDBEA11D5069A6675B699594 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		285923DE8D06F0A187D228840D055019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2197604D429EDBA59B08770ABDC5AF23 /* Pods-SPDialog_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SPDialog_Tests/Pods-SPDialog_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SPDialog_Tests/Pods-SPDialog_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33D22959593295698B327A17BF367E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E1CB47375794A6DB355ADE4C814A03 /* SPTheme.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SPTheme";
+				IBSC_MODULE = SPTheme;
+				INFOPLIST_FILE = "Target Support Files/SPTheme/ResourceBundle-SPTheme-SPTheme-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = SPTheme;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		39739E428932E2258822DD64A03B969B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7568F3CCA584B873DEB27D707F2B5C0 /* SPTheme.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPTheme/SPTheme-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPTheme/SPTheme-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SPTheme/SPTheme.modulemap";
+				PRODUCT_MODULE_NAME = SPTheme;
+				PRODUCT_NAME = SPTheme;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6303657AF31FC27895C747EF58F01A90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4925B71F0CCC0CC17B961942FEA2AB77 /* Pods-SPDialog_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SPDialog_Example/Pods-SPDialog_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SPDialog_Example/Pods-SPDialog_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65C6DAB25D902B80748FDD073F701892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1BE621D8F980820011D3EDDFE3B5649 /* SPLayout.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPLayout/SPLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPLayout/SPLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SPLayout/SPLayout.modulemap";
+				PRODUCT_MODULE_NAME = SPLayout;
+				PRODUCT_NAME = SPLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A2DB9ECD1FA625AD48B931D436CF082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 419A961AD957E23BAB6A998ED7623134 /* Masonry.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6C45694474326FD69F1D7CAD9301BDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00F9448105FF907662E0416494078AF5 /* Pods-SPDialog_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SPDialog_Example/Pods-SPDialog_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SPDialog_Example/Pods-SPDialog_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F98BED9BA939B9256E712B03DB93CF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5764A444D568191345F6577E49909B1 /* Pods-SPDialog_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SPDialog_Tests/Pods-SPDialog_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SPDialog_Tests/Pods-SPDialog_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7605A3524182E03D641EFA443E7A8163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA6FC81E99388004519B80BBF2FC76E /* SPLayout.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPLayout/SPLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPLayout/SPLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SPLayout/SPLayout.modulemap";
+				PRODUCT_MODULE_NAME = SPLayout;
+				PRODUCT_NAME = SPLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78060B055A9D050983D210D306D631C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7568F3CCA584B873DEB27D707F2B5C0 /* SPTheme.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SPTheme";
+				IBSC_MODULE = SPTheme;
+				INFOPLIST_FILE = "Target Support Files/SPTheme/ResourceBundle-SPTheme-SPTheme-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = SPTheme;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A9E60872DF1C6B6B3FE8D4ADD4A3505E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E1CB47375794A6DB355ADE4C814A03 /* SPTheme.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPTheme/SPTheme-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPTheme/SPTheme-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SPTheme/SPTheme.modulemap";
+				PRODUCT_MODULE_NAME = SPTheme;
+				PRODUCT_NAME = SPTheme;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BAAD24036FCAE4587BCFA1BFFB459551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1194BD5A5F36834F0E58706EE96A4A94 /* SPDialog.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPDialog/SPDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPDialog/SPDialog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SPDialog/SPDialog.modulemap";
+				PRODUCT_MODULE_NAME = SPDialog;
+				PRODUCT_NAME = SPDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C437DB9E31D4D0C9067317F7DDA15949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F287598D192FA586BD4AECCD85B988A4 /* Masonry.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE3197BD6A4CCB2607780596A63C032E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 642CD5CCD48F87531A9E3ECC44F1B073 /* SPDialog.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPDialog/SPDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPDialog/SPDialog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SPDialog/SPDialog.modulemap";
+				PRODUCT_MODULE_NAME = SPDialog;
+				PRODUCT_NAME = SPDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0414EDD5CC83AE0F0BE0309D0E6AB218 /* Build configuration list for PBXNativeTarget "SPLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65C6DAB25D902B80748FDD073F701892 /* Debug */,
+				7605A3524182E03D641EFA443E7A8163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104EC9250BF4EDE104280490293C13C3 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C437DB9E31D4D0C9067317F7DDA15949 /* Debug */,
+				6A2DB9ECD1FA625AD48B931D436CF082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45D518ED08897059063E2942D0843DB6 /* Build configuration list for PBXNativeTarget "Pods-SPDialog_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6303657AF31FC27895C747EF58F01A90 /* Debug */,
+				6C45694474326FD69F1D7CAD9301BDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E2F68C0B81887E6131394E568C43232 /* Build configuration list for PBXNativeTarget "Pods-SPDialog_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F98BED9BA939B9256E712B03DB93CF8 /* Debug */,
+				285923DE8D06F0A187D228840D055019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEBC0D7D44206C296FFA26ED136B9D12 /* Build configuration list for PBXNativeTarget "SPTheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39739E428932E2258822DD64A03B969B /* Debug */,
+				A9E60872DF1C6B6B3FE8D4ADD4A3505E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E04C68912817CE4B2DD5952D3793E1BB /* Build configuration list for PBXNativeTarget "SPDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3197BD6A4CCB2607780596A63C032E /* Debug */,
+				BAAD24036FCAE4587BCFA1BFFB459551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE4EBFAA0482B8B472E4A91831423CB /* Build configuration list for PBXNativeTarget "SPTheme-SPTheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78060B055A9D050983D210D306D631C1 /* Debug */,
+				33D22959593295698B327A17BF367E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,35 @@
+PODS:
+  - Masonry (1.1.0)
+  - SPDialog (0.1.0):
+    - SPLayout (~> 0.1.0)
+    - SPTheme (~> 0.1.0)
+  - SPLayout (0.1.3):
+    - Masonry (~> 1.1.0)
+  - SPTheme (0.1.0)
+
+DEPENDENCIES:
+  - SPDialog (from `../`)
+  - SPLayout (from `../../SPLayout`)
+  - SPTheme (from `../../SPTheme`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  SPDialog:
+    :path: "../"
+  SPLayout:
+    :path: "../../SPLayout"
+  SPTheme:
+    :path: "../../SPTheme"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SPDialog: 0738ce399e8eb3edcce01edcaf217336a410e000
+  SPLayout: 7d9b1e1dfdc7fef2699edd141ba516155c1ec795
+  SPTheme: 6463dd581700651d0d914252d1863ce7e009f121
+
+PODFILE CHECKSUM: 0355fa6306e017dc8116b55f03d9063d2ebcacc8
+
+COCOAPODS: 1.12.0
